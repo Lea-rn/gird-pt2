@@ -1,0 +1,46 @@
+
+body {
+    margin: 0px;
+}
+
+.parent {
+    display: grid;
+    height: 900px;
+
+    grid-template-areas: 
+
+
+    "myheader   myheader     myheader        myheader  "
+    "mymain      mymain        .          myside   "
+    "myfooter    myfooter     myfooter        myfooter"
+    ;
+    
+    grid-template-rows: 10% 80%  10% ;
+ 
+ 
+}
+
+
+
+
+.header {
+    grid-area: myheader;
+    background-color: aqua;
+}
+
+.main {
+    grid-area: mymain;
+    background-color: blueviolet;
+}
+ 
+ .side {
+    grid-area: myside;
+    background-color: green;
+} 
+
+.footer {
+    grid-area: myfooter;
+    background-color: violet;
+}
+
+
